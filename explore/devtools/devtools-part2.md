@@ -1,2 +1,2 @@
 1. The bug was that the `num1` and `num2` variables were taking in strings instead of numbers. This caused the `calculateSum` to concatenate strings instead of adding numbers together.
-2. I fixed it by converting the values from the elements from strings into numbers using the `Number` constructor.
+2. I fixed it by converting the values from the elements from strings into numbers using the `Number` constructor. This allowed `num1` and `num2` to be numbers instead of strings. When the two variables are passed as arguments to the `calculateSum`, it will be able to add them together rather than concatenating them.

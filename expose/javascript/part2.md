@@ -74,11 +74,11 @@ H. `NaN`. We get a Not-A-Number output. We cannot subtract a string with undefin
 
 ### Question 14
 
-A. `true`. We get this output because integers map to their string representations. Since `"2"` is a string, `1` is converted to `"1"`. So 2 > 1 is true since the string `"2"` is greater then `"1"` in Unicode.
+A. `true`. We get this output because strings map to their integer representations. Since `1` is a string, `"2"` is converted to `2`. So 2 > 1..
 
 B. `false`. Both are string so they are compared by Unicode. Since `"12"` starts with a `"1"`, it is compared with the `"2"` first. `"1"` is smaller than `"2"` so this is `false`
 
-C. `true`. `==` is for loose equality, which compares the values after type coersion. So, the integer `2` becomes the string `"2"` since integers map to their string representations. `"2"` equal `"2"` so this is `true`.
+C. `true`. `==` is for loose equality, which compares the values after type coersion. So, the string `'2'` becomes the integer `2` since strings map to their int representations. `2` equal `2` so this is `true`.
 
 D. `false`. `===` is for strict equality, so it doesn't perform any type coersion. Since we are comparing integer and string, they are not equal even if they are both 2.
 
